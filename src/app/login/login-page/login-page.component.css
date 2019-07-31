@@ -1,0 +1,21 @@
+mat-card {
+  width: 45%;
+  margin: auto;
+}
+
+mat-form-field, textarea {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+a {
+  color: aliceblue;
+}
+
+mat-radio-button {
+  margin-bottom: 15px;
+}
