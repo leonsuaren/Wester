@@ -1,15 +1,22 @@
 <mat-card>
-  <p>Log In</p>
+  <div class="singin">
+    <p>Log In</p>
+    <a href="@">Sing up</a>
+  </div>
   <mat-form-field appearance="fill">
     <mat-label>E-mail or username</mat-label>
     <input matInput rows="6" placeholder="E-mail or username">
     </mat-form-field>
-    <mat-radio-button color="primary" value="1">Remember me</mat-radio-button>
+    <div class="rememberme">
+      <mat-radio-button color="primary" value="1" >Remember me</mat-radio-button>
+    </div>
   <mat-form-field appearance="fill">
     <mat-label>Password</mat-label>
     <input matInput rows="6" placeholder="Password" [(ngModel)]='enteredValue' value="name">
   </mat-form-field>
-  <a href="">Forgot Password?</a>
+  <div class="forgot">
+    <a href="">Forgot Password?</a>
+  </div>
   <button
   color = "primary"
   mat-raised-button

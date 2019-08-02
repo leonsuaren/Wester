@@ -19,3 +19,22 @@ a {
 mat-radio-button {
   margin-bottom: 15px;
 }
+
+.singin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singin p {
+  font-size: 25px;
+}
+
+.rememberme {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+}
