@@ -1,40 +1,23 @@
-mat-card {
-  width: 45%;
-  margin: auto;
+.mainDiv {
+  /* margin-top: 5px; */
 }
 
-mat-form-field, textarea {
-  width: 100%;
+.menu {
+  /* background: #333; */
+}
+  ul li:hover {
+    background: #ceced1;
 }
 
-button {
-  width: 100%;
-  margin-top: 15px;
+ul li a {
+  color: azure;
 }
 
-a {
-  color: aliceblue;
+ul li .home {
+  color: azure;
 }
 
-mat-radio-button {
-  margin-bottom: 15px;
-}
-
-.singin {
-  display: flex;
-  justify-content: space-between;
-}
-
-.singin p {
-  font-size: 25px;
-}
-
-.rememberme {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.forgot {
-  display: flex;
-  justify-content: flex-end;
+.top-bar, ul {
+  background: #333;
+  padding: 10px;
 }
