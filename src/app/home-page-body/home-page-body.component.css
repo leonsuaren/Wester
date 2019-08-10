@@ -1,0 +1,46 @@
+.image {
+  background-image: url("./../../assets/plato-restaurant.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  z-index: -1;
+}
+
+h1 {
+  color: azure;
+  font-family: OpenSans-Light;
+  font-size: 59px;
+}
+
+p {
+  color: azure;
+  font-size: 1.4em;
+}
+
+.paragraf:hover {
+  font-size: 1.2em;
+}
+
+.middle-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: auto;
+  margin-top: 150px;
+}
+
+.button_size {
+  width: 300px;
+  height: 50px;
+}
+
+.hollow {
+  border: solid 2px azure;
+}
+
+.button_words {
+  font-size: 1.4em;
+}

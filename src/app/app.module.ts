@@ -8,11 +8,15 @@ import { MatInputModule, MatCardModule, MatButtonModule, MatRadioModule } from '
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomePageBodyComponent } from './home-page-body/home-page-body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    MenuComponent,
+    HomePageBodyComponent
   ],
   imports: [
     BrowserModule,
