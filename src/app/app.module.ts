@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomePageBodyComponent } from './home-page-body/home-page-body.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     MenuComponent,
-    HomePageBodyComponent
+    HomePageBodyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
