@@ -1,0 +1,26 @@
+.callout {
+  width: 50%;
+  margin: 150px auto 150px auto;
+  background-color: rgb(216, 219, 218);
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.forgot, .radio {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_size {
+  width: 690px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.button_words {
+  font-size: 1.4em;
+}
