@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
-  enteredValue = '';
-  newPost = 'NO CONTENT';
-
-  onAddPost() {
-    this.newPost = this.enteredValue;
-  }
 
   constructor() { }
 
