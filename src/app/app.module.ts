@@ -13,6 +13,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomePageBodyComponent } from './home-page-body/home-page-body.component';
 import { FooterComponent } from './footer/footer.component';
+import { SendMoneyPageComponent } from './send-money-page/send-money-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginPageComponent,
     MenuComponent,
     HomePageBodyComponent,
-    FooterComponent
+    FooterComponent,
+    SendMoneyPageComponent
   ],
   imports: [
     BrowserModule,
