@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomePageBodyComponent } from './home-page-body/home-page-body.component';
 import { FooterComponent } from './footer/footer.component';
 import { SendMoneyPageComponent } from './send-money-page/send-money-page.component';
+import { PickUpPageComponent } from './pick-up-page/pick-up-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SendMoneyPageComponent } from './send-money-page/send-money-page.compon
     MenuComponent,
     HomePageBodyComponent,
     FooterComponent,
-    SendMoneyPageComponent
+    SendMoneyPageComponent,
+    PickUpPageComponent
   ],
   imports: [
     BrowserModule,

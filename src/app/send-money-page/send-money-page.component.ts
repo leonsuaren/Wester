@@ -6,7 +6,7 @@ import { SenderInf } from './../wester.model';
 @Component({
   selector: 'app-send-money-page',
   templateUrl: './send-money-page.component.html',
-  styleUrls: ['./send-money-page.component.css']
+  styleUrls: ['./send-money-page.component.scss']
 })
 export class SendMoneyPageComponent implements OnInit {
 
