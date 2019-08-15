@@ -15,7 +15,7 @@ export class SendMoneyPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onContinue(form: NgForm) {
+  /*onContinue(form: NgForm) {
     console.log(form.value);
     if (form.invalid) {
       return;
@@ -24,6 +24,6 @@ export class SendMoneyPageComponent implements OnInit {
       name: form.value.reciever,
       sendAmount: form.value.sendAmount
     };
-  }
+  }*/
 
 }
