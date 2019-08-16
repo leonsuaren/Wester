@@ -1,0 +1,10 @@
+/* PRIMARY BUTTON STYLE*/
+
+.PBTN {
+    border-radius: $PBTN_RADIOUS;
+    background-color: $PBTN_BG_COLOR;
+    font-family: $PBTN_FONT;
+    &:hover {
+        background-color: $PBTN_HOVEROVER;
+    }
+}

@@ -1,3 +1,4 @@
+@import "./../../styles";
 
   ul li:hover {
     background: #ceced1;
@@ -15,3 +16,11 @@ ul li .home {
   background: #333;
   padding: 10px;
 }
+
+.secundary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 0 2px;
+}
+
+
