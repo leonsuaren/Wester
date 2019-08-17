@@ -11,8 +11,12 @@
   z-index: -1;
 }
 
-.paragraf:hover {
+.paragraf {
+    margin-top: 20px;
+    color: $PRIMARY_FONT_COLOR;
+    &:hover {
   font-size: 1.2em;
+    }
 }
 
 .middle-content-section {
@@ -21,18 +25,13 @@
   align-items: center;
   align-self: auto;
   margin-top: 150px;
-    h1 {
-  color: azure;
-  font-family: OpenSans-Light;
-  font-size: 59px;
-}
-    p {
-  color: azure;
-  font-size: 1.4em;
-}
+  margin-bottom: 180px;
+    .P {
+        font-size: 20px;
+    }
 }
 
 .BTN {
-    width: 20%;
+    width: 30%;
     height: 20%;
 }
