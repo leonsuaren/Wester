@@ -1,9 +1,6 @@
 @import "./../../styles.scss" ;
 
 .mainDiv {
-  width: 70%;
-  margin: auto;
-  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,13 +8,10 @@
 
 .sendMoneyDiv {
   width: 68%;
-  background-color: rgb(216, 219, 218);
 }
 
 .summaryDiv {
   width: 28%;
-  background-color: $CALLOUT_BG_COLOR;
-
 }
 
 .receiverDiv {

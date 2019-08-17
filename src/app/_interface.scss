@@ -12,6 +12,8 @@
     }
 }
 
+/* PRIMARY BUTTON STYLE*/
+
 .SBTN {
     background-color: $SBTN_BG_COLOR;
     border: $SBTN_BORDER;
@@ -20,4 +22,26 @@
     padding: $SBTN_PADDING;
     color: $SBTN_FONT_COLOR;
     margin: $SBTN_MAGIN;
+}
+
+/* MAIN CONTAINER */
+
+.MC {
+    width: $MC_WIDTH;
+    margin: $MC_MARGIN;
+    padding: $MC_PADDING;
+}
+
+/* PRIMARY CARD */
+
+.PC {
+    background-color: $PC_BG_COLOR;
+    border-top: $PC_BORDER;
+}
+
+/* MENU AND FOOTER */
+
+.M {
+    background-color: $MF_BG_COLOR;
+    border-bottom: $MF_BORDER;
 }

@@ -1,21 +1,17 @@
 @import "./../../styles";
 
-  ul li:hover {
-//    background: #ceced1;
+.M {
+    background-color: $MF_BG_COLOR;
+    border-bottom: $MF_BORDER;
+    padding: $M_PADDING;
+    ul {
+        background-color:  $MF_BG_COLOR;
+        a {
+        font-family: $PRIMARY_FONT;
+        color: $PBTN_FONT_COLOR;
+            &:hover {
+                border-bottom: 1px solid #7A9E7E;
+            }
+        }
+    }
 }
-
-ul li a {
-  color: azure;
-}
-
-ul li .home {
-  color: azure;
-}
-
-.top-bar, ul {
-  background: #333;
-  padding: 10px;
-}
-
-
-

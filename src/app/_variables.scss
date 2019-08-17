@@ -1,12 +1,19 @@
+/* COLOR PALETTE
+
+#001A23 MENU AND FOOTER BG COLOR
+#7A9E7E MENU AND CARDS BORDERS COLOR
+#B3EFB2 BUTTONS COLOR
+#31493C 
+#E8F1F2 CARDS BG COLOR
+
 /* DECLARACION DE VARIABLES*/ 
 
-$CALLOUT_BG_COLOR: rgb(216, 219, 218);
 $PRIMARY_FONT: 'Roboto', sans-serif;
 $SECUNDARY_FONT: 'Open Sans', sans-serif;
 
 /* primary btn style*/
 
-$PBTN_BG_COLOR: #5771d6;
+$PBTN_BG_COLOR: #B3EFB2;
 $PBTN_RADIOUS: 3px;
 $PBTN_HOVEROVER: #7886ba;
 $PBTN_FONT: 'Roboto', sans-serif;
@@ -17,10 +24,27 @@ $PBTN_MARGIN: 1px;
 /* secundary btn style*/
 
 $SBTN_BG_COLOR: transparent;
-$SBTN_BORDER: solid 1px #FFFFFF;
+$SBTN_BORDER: solid 1px #B3EFB2;
 $SBTN_RADIOUS: 3px;
 $SBTN_HOVEROVER: #7886ba;
 $SBTN_FONT: 'Roboto', sans-serif;
 $SBTN_PADDING: 10px 20px;
 $SBTN_FONT_COLOR: #FFFFFF;
 $SBTN_MAGIN: 1px;
+
+/* main container */
+
+$MC_WIDTH: 70%;
+$MC_MARGIN: 30px auto 80px auto;
+$MC_PADDING: 5px;
+
+/* primary card */
+
+$PC_BORDER: 5px solid #7A9E7E;
+$PC_BG_COLOR: #E8F1F2;
+
+/* menu & footer*/
+
+$MF_BG_COLOR: #001A23;
+$MF_BORDER: solid 5px #7A9E7E;
+$M_PADDING: 20px;
