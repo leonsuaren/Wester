@@ -1,0 +1,20 @@
+@import "./../../styles.scss" ;
+
+.secundary_container {
+        width: 60%;
+        margin: auto auto;
+        padding: 50px;
+    h1 {
+    font-family: $SECUNDARY_FONT;
+} 
+    p {
+        color: black;
+    }
+    .PBTN {
+        width: 100%;
+    } 
+        input {
+            height: 80%; 
+            margin-bottom: 20px;
+        }
+}

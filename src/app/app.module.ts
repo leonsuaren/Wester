@@ -15,6 +15,7 @@ import { HomePageBodyComponent } from './home-page-body/home-page-body.component
 import { FooterComponent } from './footer/footer.component';
 import { SendMoneyPageComponent } from './send-money-page/send-money-page.component';
 import { PickUpPageComponent } from './pick-up-page/pick-up-page.component';
+import { TrackTransferPageComponent } from './track-transfer-page/track-transfer-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PickUpPageComponent } from './pick-up-page/pick-up-page.component';
     HomePageBodyComponent,
     FooterComponent,
     SendMoneyPageComponent,
-    PickUpPageComponent
+    PickUpPageComponent,
+    TrackTransferPageComponent
   ],
   imports: [
     BrowserModule,
