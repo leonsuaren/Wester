@@ -1,0 +1,9 @@
+@mixin logo($bgcolor: $PC_BG_COLOR, $borderR: 5px) {
+    background-color: $bgcolor;
+    color: $MF_BG_COLOR;
+    border-radius: $borderR;
+    &:hover {
+        background-color: $MF_BG_COLOR;
+        color: $bgcolor;
+    }
+}

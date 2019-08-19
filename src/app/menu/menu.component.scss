@@ -13,5 +13,10 @@
                 border-bottom: 1px solid #7A9E7E;
             }
         }
+        li {
+            .home {
+            @include logo();
+            }
+        }
     }
 }
