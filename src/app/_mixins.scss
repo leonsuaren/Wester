@@ -2,6 +2,7 @@
     background-color: $bgcolor;
     color: $MF_BG_COLOR;
     border-radius: $borderR;
+    border: none;
     &:hover {
         background-color: $MF_BG_COLOR;
         color: $bgcolor;
