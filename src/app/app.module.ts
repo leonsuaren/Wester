@@ -18,6 +18,7 @@ import { PickUpPageComponent } from './pick-up-page/pick-up-page.component';
 import { TrackTransferPageComponent } from './track-transfer-page/track-transfer-page.component';
 import { SendMoneySummaryComponent } from './send-money-summary/send-money-summary.component';
 import { WesternService } from 'src/app/western.service';
+import { PayBillsComponent } from './pay-bills/pay-bills.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WesternService } from 'src/app/western.service';
     SendMoneyPageComponent,
     PickUpPageComponent,
     TrackTransferPageComponent,
-    SendMoneySummaryComponent
+    SendMoneySummaryComponent,
+    PayBillsComponent
   ],
   imports: [
     BrowserModule,
