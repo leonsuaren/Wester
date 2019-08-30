@@ -1,4 +1,4 @@
 export interface SenderInf {
-  name: string;
+  reciever: string;
   sendAmount: number;
 }

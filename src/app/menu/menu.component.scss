@@ -6,6 +6,8 @@
     padding: $M_PADDING;
     ul {
         background-color:  $MF_BG_COLOR;
+        margin: 0;
+        padding: 0;
         a {
         font-family: $PRIMARY_FONT;
         color: $PBTN_FONT_COLOR;
@@ -17,6 +19,16 @@
             .home {
             @include logo();
             }
+        }
+        .is-active {
+            @include breakpoint(1080px) {
+                display: none;
+            }
+        }
+    }
+    ul {
+        @include breakpoint(1080px) {
+//            float: right;
         }
     }
 }

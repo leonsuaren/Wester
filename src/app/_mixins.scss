@@ -8,3 +8,9 @@
         color: $bgcolor;
     }
 }
+
+@mixin breakpoint($length) {
+    @media (max-width: $length) {
+        @content;
+    }
+}

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { SenderInf } from './../wester.model';
+import { WesternService } from 'src/app/western.service';
 
 @Component({
   selector: 'app-send-money-page',
@@ -10,20 +11,18 @@ import { SenderInf } from './../wester.model';
 })
 export class SendMoneyPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public westernService: WesternService) { }
 
   ngOnInit() {
   }
 
-  /*onContinue(form: NgForm) {
+  onContinue(form: NgForm) {
     console.log(form.value);
     if (form.invalid) {
       return;
     }
-    const send: SenderInf = {
-      name: form.value.reciever,
-      sendAmount: form.value.sendAmount
-    };
-  }*/
+    this.westernService.addSender(form.value.reciever, form.value.sendAmount);
+    form.resetForm();
+  }
 
 }

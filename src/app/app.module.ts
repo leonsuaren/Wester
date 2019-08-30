@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SendMoneyPageComponent } from './send-money-page/send-money-page.component';
 import { PickUpPageComponent } from './pick-up-page/pick-up-page.component';
 import { TrackTransferPageComponent } from './track-transfer-page/track-transfer-page.component';
+import { SendMoneySummaryComponent } from './send-money-summary/send-money-summary.component';
+import { WesternService } from 'src/app/western.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { TrackTransferPageComponent } from './track-transfer-page/track-transfer
     FooterComponent,
     SendMoneyPageComponent,
     PickUpPageComponent,
-    TrackTransferPageComponent
+    TrackTransferPageComponent,
+    SendMoneySummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,7 @@ import { TrackTransferPageComponent } from './track-transfer-page/track-transfer
     MatButtonModule,
     MatRadioModule
   ],
-  providers: [],
+  providers: [WesternService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

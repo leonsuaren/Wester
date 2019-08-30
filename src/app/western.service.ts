@@ -6,14 +6,15 @@ import { SenderInf } from './wester.model';
   providedIn: 'root'
 })
 export class WesternService {
-  private send: SenderInf [] = [];
+  private send: SenderInf[] = [];
 
-  getSender( ) {
-    return [...this.send];
+  getSender() {
+    return this.send;
   }
 
-  addSender(name: string, sendAmount: number) {
-    const send: SenderInf = { name, sendAmount };
+  addSender(reciever: string, sendAmount: number) {
+    const send: SenderInf = { reciever: reciever, sendAmount: sendAmount };
+    this.send.push(send);
   }
 
 }
