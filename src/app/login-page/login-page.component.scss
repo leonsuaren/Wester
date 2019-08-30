@@ -1,0 +1,15 @@
+@import "./../../styles.scss";
+
+.forgot, .radio {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MC {
+  width: 30%;
+  padding: 3%;
+}
+
+.PBTN {
+  width: 100%;
+}
