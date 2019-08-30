@@ -19,6 +19,7 @@ import { TrackTransferPageComponent } from './track-transfer-page/track-transfer
 import { SendMoneySummaryComponent } from './send-money-summary/send-money-summary.component';
 import { WesternService } from 'src/app/western.service';
 import { PayBillsComponent } from './pay-bills/pay-bills.component';
+import { FindLocationComponent } from './find-location/find-location.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PayBillsComponent } from './pay-bills/pay-bills.component';
     PickUpPageComponent,
     TrackTransferPageComponent,
     SendMoneySummaryComponent,
-    PayBillsComponent
+    PayBillsComponent,
+    FindLocationComponent
   ],
   imports: [
     BrowserModule,
