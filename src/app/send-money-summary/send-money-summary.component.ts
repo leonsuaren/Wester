@@ -9,12 +9,14 @@ import { SenderInf } from 'src/app/wester.model';
 })
 export class SendMoneySummaryComponent implements OnInit {
 
-  send: SenderInf[] = [];
+  sender: SenderInf[] = [];
 
-  constructor(public westernService: WesternService) { }
+  constructor(public westernService: WesternService) {
+    this.sender = this.westernService.getSender();
+    console.log(this.sender);
+  }
 
   ngOnInit() {
-    this.send = this.westernService.getSender();
   }
 
 }

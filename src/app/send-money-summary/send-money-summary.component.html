@@ -6,7 +6,7 @@
 </div>
 <hr>
 <div>
-  <p>{{ send.reciever }}</p>
+  <p *ngFor="let send of sender">{{ send.reciever }}</p>
   <p>Transfer Fee:</p>
   <p>Tranfer Total:</p>
   <p>Total to receiver: </p>
