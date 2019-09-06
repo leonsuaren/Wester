@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-send-money-summary',
   templateUrl: './send-money-summary.component.html',
-  styleUrls: ['./send-money-summary.component.css']
+  styleUrls: ['./send-money-summary.component.scss']
 })
 export class SendMoneySummaryComponent implements OnInit {
 
