@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -43,7 +44,8 @@ import { FindLocationComponent } from './find-location/find-location.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatRadioModule
+    MatRadioModule,
+    HttpClientModule
   ],
   providers: [WesternService],
   bootstrap: [AppComponent]
