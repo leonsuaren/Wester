@@ -8,6 +8,7 @@ import { PickUpPageComponent } from 'src/app/pick-up-page/pick-up-page.component
 import { TrackTransferPageComponent } from 'src/app/track-transfer-page/track-transfer-page.component';
 import { PayBillsComponent } from './pay-bills/pay-bills.component';
 import { FindLocationComponent } from './find-location/find-location.component';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageBodyComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'pick-up-money', component: PickUpPageComponent },
   { path: 'track-transfer', component: TrackTransferPageComponent },
   { path: 'pay-bills', component: PayBillsComponent },
-  { path: 'find-locations', component: FindLocationComponent }
+  { path: 'find-locations', component: FindLocationComponent },
+  { path: 'singin', component: SignInPageComponent }
 ];
 
 @NgModule({

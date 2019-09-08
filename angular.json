@@ -24,8 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/foundation-sites/dist/css/foundation.min.css"
+              "./node_modules/foundation-sites/dist/css/foundation.min.css",
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",

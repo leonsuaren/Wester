@@ -1,0 +1,90 @@
+<div class="callout MC PC">
+  <div class="flex-container align-justify">
+    <h4>Sign In</h4>
+    <hr>
+  </div>
+  <form #singInForm="ngForm" (submit)="onSingIn(singInForm)">
+    <label>Name
+      <input
+      type="text"
+      required
+      placeholder="Name"
+      name="name"
+      ngModel
+      #name="ngModel"
+      >
+    </label>
+    <label>Last Name
+      <input
+      type="text"
+      required
+      placeholder="Last Name"
+      name="lastName"
+      ngModel
+      #lastName="ngModel"
+      >
+    </label>
+    <label>Phone Number
+      <input
+      type="number"
+      required
+      placeholder="Phone Number"
+      name="phoneNumber"
+      ngModel
+      #phoneNumber="ngModel"
+      >
+    </label>
+    <label>Country
+      <input
+      type="text"
+      required
+      placeholder="Country"
+      name="country"
+      ngModel
+      #country="ngModel"
+      >
+    </label>
+    <label>State
+      <input
+      type="text"
+      required
+      placeholder="State"
+      name="state"
+      ngModel
+      #state="ngModel"
+      >
+    </label>
+    <label>E-mail
+      <input
+      type="email"
+      required
+      placeholder="E-mail"
+      name="email"
+      ngModel
+      #email=ngModel
+      >
+    </label>
+    <label>Username
+      <input
+      type="text"
+      required
+      placeholder="Username"
+      name="username"
+      ngModel
+      #username="ngModel"
+      >
+    </label>
+    <label>Password
+      <input
+      type="password"
+      required
+      placeholder="Password"
+      name="password"
+      ngModel
+      #password="ngModel"
+      >
+    </label>
+    <hr>
+    <button class="PBTN" type="submit">Register</button>
+  </form>
+</div>
