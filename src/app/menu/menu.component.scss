@@ -1,18 +1,20 @@
 @import "./../../styles";
 
 .M {
-    background-color: $MF_BG_COLOR;
+    background-color: $PRIMARY_FONT_COLOR;
     border-bottom: $MF_BORDER;
     padding: $M_PADDING;
+    height: 45px;
     ul {
-        background-color:  $MF_BG_COLOR;
+        background-color:  $PRIMARY_FONT_COLOR;
         margin: 0;
         padding: 0;
         a {
         font-family: $PRIMARY_FONT;
-        color: $PBTN_FONT_COLOR;
+        color: $MF_BG_COLOR;
+        border-right: 1px solid $PC_BG_COLOR;
             &:hover {
-                border-bottom: 1px solid #7A9E7E;
+                background-color: $PC_BG_COLOR;
             }
         }
         li {

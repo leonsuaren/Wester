@@ -6,10 +6,11 @@
 #31493C HOVEROVER EFFECT & SECUNDARY BUTTON COLOR
 #E8F1F2 CARDS BG COLOR
 
-/* DECLARACION DE VARIABLES*/ 
+/* DECLARACION DE VARIABLES*/
 
-$PRIMARY_FONT: 'Roboto', sans-serif;
-$SECUNDARY_FONT: 'Open Sans', sans-serif;
+$PRIMARY_FONT: 'Oswald', sans-serif;;
+$SECUNDARY_FONT: 'Raleway', sans-serif;
+$logoFont: 'Modak', cursive;
 $PRIMARY_FONT_COLOR: #FFFFFF;
 
 /* primary btn */
@@ -23,8 +24,7 @@ $PBTN_MARGIN: 1px;
 
 /* secundary btn */
 
-$SBTN_BG_COLOR: transparent;
-$SBTN_BORDER: solid 1px #31493C;
+$SBTN_BG_COLOR: #9AC2C5;
 $SBTN_RADIOUS: 3px;
 $SBTN_FONT: 'Roboto', sans-serif;
 $SBTN_PADDING: 10px 20px;
@@ -46,7 +46,7 @@ $PC_BG_COLOR: #E8F1F2;
 /* menu & footer*/
 
 $MF_BG_COLOR: #001A23;
-$MF_BORDER: solid 5px #7A9E7E;
+$MF_BORDER: solid 2px $PC_BG_COLOR;
 $M_PADDING: 20px;
 
 /* h1 */

@@ -1,12 +1,13 @@
 @mixin logo($bgcolor: $PC_BG_COLOR, $borderR: 5px) {
-    background-color: $bgcolor;
+    background-color: #fff;
     color: $MF_BG_COLOR;
-    border-radius: $borderR;
     border: none;
-    &:hover {
-        background-color: $MF_BG_COLOR;
-        color: $bgcolor;
-    }
+    font-family: $logoFont;
+    font-size: 1.1rem;
+    // &:hover {
+    //     background-color: $MF_BG_COLOR;
+    //     color: $MF_BG_COLOR;
+    // }
 }
 
 @mixin breakpoint($length) {
