@@ -1,5 +1,9 @@
 @import "./../../styles";
 
+.LogOut {
+  display: none;
+}
+
 .M {
     background-color: $PRIMARY_FONT_COLOR;
     border-bottom: $MF_BORDER;
