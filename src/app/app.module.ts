@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
 
-import { MatInputModule, MatCardModule, MatButtonModule, MatRadioModule } from '@angular/material';
+import { MatInputModule, MatCardModule, MatButtonModule, MatRadioModule, MatFormFieldModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,7 +47,8 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
     MatCardModule,
     MatButtonModule,
     MatRadioModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule
   ],
   providers: [WesternService],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-@mixin logo($bgcolor: $PC_BG_COLOR, $borderR: 5px) {
+@mixin logo($bgcolor: $borderColor, $borderR: 5px) {
     background-color: #fff;
     color: $MF_BG_COLOR;
     border: none;

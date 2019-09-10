@@ -1,10 +1,22 @@
 @import "./../../styles.scss";
 
-.MC {
-  width: 30%;
-  padding: 3%;
-}
-
-.PBTN {
-  width: 100%;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  .form-div {
+    width: 65%;
+  }
+  .side-div {
+    width: 30%;
+    .callout-title {
+      width: 100%;
+      border-bottom: 2px solid $borderColor;
+      margin-bottom: 5%;
+    }
+    .span {
+      font-weight: 500;
+    }
+  }
 }

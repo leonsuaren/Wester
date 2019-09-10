@@ -2,7 +2,7 @@
 
 .PBTN {
     background-color: $PBTN_BG_COLOR;
-    font-family: $PRIMARY_FONT;
+    font-family: $primaryFont;
     padding: $PBTN_PADDING;
     color: $PBTN_FONT_COLOR;
     margin: $PBTN_MARGIN;
@@ -13,16 +13,15 @@
     }
 }
 
-/* PRIMARY BUTTON STYLE*/
+/* SECUNDARY BUTTON STYLE*/
 
 .SBTN {
     background-color: $SBTN_BG_COLOR;
-    font-family: $PRIMARY_FONT;
+    font-family: $primaryFont;
     padding: $SBTN_PADDING;
     color: $SBTN_FONT_COLOR;
     margin: $SBTN_MAGIN;
     width: 85px;
-
     cursor: pointer;
         &:hover {
           opacity: .8;
@@ -31,32 +30,24 @@
 
 /* H1 STYLE */
 
-.H1 {
-    font-family: $H1_FONT;
-    color: $H1_FONT_COLOR;
-    font-size: $H1_FONT_SIZE
+.h1 {
+    font-family: $primaryFont;
+    font-size: 2.5rem;
 }
 
 /* PARAGRAPH */
 
-.P {
-    font-family: $P_FONT;
-    color: $P_FONT_COLOR;
+.paragraph {
+    font-family: $secundaryFont;
+    font-size: 1.5rem;
 }
 
 /* MAIN CONTAINER */
 
-.MC {
+.main-container {
     width: $MC_WIDTH;
     margin: $MC_MARGIN;
     padding: $MC_PADDING;
-}
-
-/* PRIMARY CARD */
-
-.PC {
-    background-color: $PC_BG_COLOR;
-    border-top: $PC_BORDER;
 }
 
 /* MENU AND FOOTER */
