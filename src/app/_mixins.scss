@@ -1,6 +1,6 @@
 @mixin logo($bgcolor: $borderColor, $borderR: 5px) {
     background-color: #fff;
-    color: $MF_BG_COLOR;
+    color: $logoBGColor;
     border: none;
     font-family: $logoFont;
     font-size: 1.1rem;

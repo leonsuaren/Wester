@@ -1,11 +1,11 @@
 /* PRIMARY BUTTON STYLE*/
 
-.PBTN {
-    background-color: $PBTN_BG_COLOR;
+.primary-button {
+    background-color: $buttonBGColor;
     font-family: $primaryFont;
-    padding: $PBTN_PADDING;
-    color: $PBTN_FONT_COLOR;
-    margin: $PBTN_MARGIN;
+    padding: $buttonPadding;
+    color: $primaryFontColor;
+    margin: $buttonMargin;
     width: 85px;
     cursor: pointer;
     &:hover {
@@ -15,12 +15,12 @@
 
 /* SECUNDARY BUTTON STYLE*/
 
-.SBTN {
-    background-color: $SBTN_BG_COLOR;
+.secundary-button{
+    background-color: $secundaryButtonBGColor;
     font-family: $primaryFont;
-    padding: $SBTN_PADDING;
-    color: $SBTN_FONT_COLOR;
-    margin: $SBTN_MAGIN;
+    padding: $buttonPadding;
+    color: $primaryFontColor;
+    margin: $buttonMargin;
     width: 85px;
     cursor: pointer;
         &:hover {
@@ -32,7 +32,7 @@
 
 .h1 {
     font-family: $primaryFont;
-    font-size: 2.5rem;
+    font-size: $h1FontSize;
 }
 
 /* PARAGRAPH */
@@ -45,22 +45,13 @@
 /* MAIN CONTAINER */
 
 .main-container {
-    width: $MC_WIDTH;
-    margin: $MC_MARGIN;
-    padding: $MC_PADDING;
+    width: $mainContainerWidth;
+    margin: $mainContainerMargin;
+    padding: $mainContainerPadding;
 }
 
 /* MENU AND FOOTER */
 
-.M {
-    background-color: $MF_BG_COLOR;
-    border-bottom: $MF_BORDER;
-}
-
-.F {
-    background-color: $MF_BG_COLOR;
-    border-top: $MF_BORDER;
+.footer {
     height: 500px;
 }
-
-

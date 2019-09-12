@@ -4,10 +4,9 @@
   display: none;
 }
 
-.M {
+.menu {
     background-color: $primaryFontColor;
-    border-bottom: $MF_BORDER;
-    padding: $M_PADDING;
+    padding: $menuPadding;
     height: 45px;
     ul {
         background-color:  $primaryFontColor;
@@ -15,7 +14,7 @@
         padding: 0;
         a {
         font-family: $primaryFont;
-        color: $MF_BG_COLOR;
+        color: $secundaryFontColor;
         border-right: 1px solid $borderColor;
             &:hover {
                 background-color: $borderColor;
