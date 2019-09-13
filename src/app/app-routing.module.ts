@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'track-transfer', component: TrackTransferPageComponent },
   { path: 'pay-bills', component: PayBillsComponent },
   { path: 'find-locations', component: FindLocationComponent },
-  { path: 'singin', component: SignInPageComponent }
+  { path: 'signin', component: SignInPageComponent }
 ];
 
 @NgModule({

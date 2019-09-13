@@ -1,20 +1,23 @@
 @import "./../../styles";
 
-.M {
-    background-color: $PRIMARY_FONT_COLOR;
-    border-bottom: $MF_BORDER;
-    padding: $M_PADDING;
+.LogOut {
+  display: none;
+}
+
+.menu {
+    background-color: $primaryFontColor;
+    padding: $menuPadding;
     height: 45px;
     ul {
-        background-color:  $PRIMARY_FONT_COLOR;
+        background-color:  $primaryFontColor;
         margin: 0;
         padding: 0;
         a {
-        font-family: $PRIMARY_FONT;
-        color: $MF_BG_COLOR;
-        border-right: 1px solid $PC_BG_COLOR;
+        font-family: $primaryFont;
+        color: $secundaryFontColor;
+        border-right: 1px solid $borderColor;
             &:hover {
-                background-color: $PC_BG_COLOR;
+                background-color: $borderColor;
             }
         }
         li {

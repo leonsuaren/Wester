@@ -16,7 +16,7 @@
 
 .paragraf {
     margin-top: 20px;
-    color: $PRIMARY_FONT_COLOR;
+    color: $primaryFontColor;
     &:hover {
   font-size: 1.2em;
     }
@@ -34,12 +34,12 @@
     }
     h1 {
     @include breakpoint (823px) {
-        color: $PBTN_BG_COLOR;
+        color: $buttonBGColor;
     }
     }
 }
 
-.BTN {
+.button-home-page {
     width: 30%;
     height: 20%;
 }

@@ -8,54 +8,46 @@
 
 /* DECLARACION DE VARIABLES*/
 
-$PRIMARY_FONT: 'Oswald', sans-serif;;
-$SECUNDARY_FONT: 'Raleway', sans-serif;
+$primaryFont: 'Oswald', sans-serif;
+$secundaryFont: 'Raleway', sans-serif;
 $logoFont: 'Modak', cursive;
-$PRIMARY_FONT_COLOR: #FFFFFF;
+$primaryFontColor: #FFFFFF;
+$secundaryFontColor: #000000;
 
 /* primary btn */
 
-$PBTN_BG_COLOR: #B3EFB9;
-$PBTN_RADIOUS: 3px;
-$PBTN_FONT: 'Roboto', sans-serif;
-$PBTN_PADDING: 10px 20px;
-$PBTN_FONT_COLOR: $PRIMARY_FONT_COLOR;
-$PBTN_MARGIN: 1px;
+$buttonBGColor: #B3EFB9;
+$buttonPadding: 10px 20px;
+$buttonMargin: 1px;
 
 /* secundary btn */
 
-$SBTN_BG_COLOR: #9AC2C5;
-$SBTN_RADIOUS: 3px;
-$SBTN_FONT: 'Roboto', sans-serif;
-$SBTN_PADDING: 10px 20px;
-$SBTN_FONT_COLOR: $PRIMARY_FONT_COLOR;
-$SBTN_MAGIN: 1px;
-$SBTN_HOVEROVER_COLOR: #31493C;
+$secundaryButtonBGColor: #9AC2C5;
 
 /* main container */
 
-$MC_WIDTH: 70%;
-$MC_MARGIN: 30px auto 80px auto;
-$MC_PADDING: 5px;
+$mainContainerWidth: 70%;
+$mainContainerMargin: 30px auto 80px auto;
+$mainContainerPadding: 5px;
 
 /* primary card */
 
-$PC_BORDER: 5px solid #7A9E7E;
-$PC_BG_COLOR: #E8F1F2;
+$borderColor: #E8F1F2;
+
+/* logo */
+
+$logoBGColor: #001A23;
 
 /* menu & footer*/
 
-$MF_BG_COLOR: #001A23;
-$MF_BORDER: solid 2px $PC_BG_COLOR;
-$M_PADDING: 20px;
+// $menuBorder: solid 2px $borderColor;
+$menuPadding: 30px;
 
 /* h1 */
 
-$H1_FONT: $PRIMARY_FONT;
-$H1_FONT_COLOR: $PRIMARY_FONT_COLOR;
-$H1_FONT_SIZE: 59px;
+$h1FontSize: 2.5rem;
 
 /* p */
 
-$P_FONT: $SECUNDARY_FONT;
-$P_FONT_COLOR: $PRIMARY_FONT_COLOR;
+$pharagraphFont: $secundaryFont;
+$secundaryParagraph: 'Oswald', sans-serif;
