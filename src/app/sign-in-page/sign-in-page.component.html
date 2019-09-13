@@ -2,35 +2,50 @@
   <div>
     <h1 class="h1">Join Western</h1>
     <p class="paragraph">The best way to transfer to your loveones</p>
-    <hr>
   </div>
   <div class="row">
     <div class="form-div">
       <form #singInForm="ngForm" (submit)="onSingIn(singInForm)">
-        <label>Name
-          <input type="text" required placeholder="Name" name="name" ngModel #name="ngModel">
-        </label>
-        <label>Last Name
-          <input type="text" required placeholder="Last Name" name="lastName" ngModel #lastName="ngModel">
-        </label>
-        <label>Phone Number
-          <input type="number" required placeholder="Phone Number" name="phoneNumber" ngModel #phoneNumber="ngModel">
-        </label>
-        <label>Country
-          <input type="text" required placeholder="Country" name="country" ngModel #country="ngModel">
-        </label>
-        <label>State
-          <input type="text" required placeholder="State" name="state" ngModel #state="ngModel">
-        </label>
-        <label>E-mail
-          <input type="email" required placeholder="E-mail" name="email" ngModel #email=ngModel>
-        </label>
-        <label>Username
-          <input type="text" required placeholder="Username" name="username" ngModel #username="ngModel">
-        </label>
-        <label>Password
-          <input type="password" required placeholder="Password" name="password" ngModel #password="ngModel">
-        </label>
+        <hr>
+        <div class="personal-info">
+          <div class="top-bar menu">
+            <h5 class="h5">Personal Information</h5>
+          </div>
+          <div class="personal-info-form">
+            <label class="basic-paragraph">Name
+              <input class="input-form" type="text" required placeholder="Name" name="name" ngModel #name="ngModel">
+            </label>
+            <label class="basic-paragraph">Last Name
+              <input class="input-form" type="text" required placeholder="Last Name" name="lastName" ngModel #lastName="ngModel">
+            </label>
+            <label class="basic-paragraph">Phone Number
+              <input class="input-form" type="number" required placeholder="Phone Number" name="phoneNumber" ngModel
+                #phoneNumber="ngModel">
+            </label>
+            <label class="basic-paragraph">Country
+              <input class="input-form" type="text" required placeholder="Country" name="country" ngModel #country="ngModel">
+            </label>
+            <label class="basic-paragraph">State
+              <input class="input-form" type="text" required placeholder="State" name="state" ngModel #state="ngModel">
+            </label>
+          </div>
+        </div>
+        <div class="create-account">
+          <div class="top-bar menu">
+            <h5 class="h5">Create Your Acount</h5>
+          </div>
+          <div class="create-account-form">
+            <label class="basic-paragraph">E-mail
+              <input class="input-form" type="email" required placeholder="E-mail" name="email" ngModel #email=ngModel>
+            </label>
+            <label class="basic-paragraph">Username
+              <input class="input-form" type="text" required placeholder="Username" name="username" ngModel #username="ngModel">
+            </label>
+            <label class="basic-paragraph">Password
+              <input class="input-form" type="password" required placeholder="Password" name="password" ngModel #password="ngModel">
+            </label>
+          </div>
+        </div>
         <hr>
         <button class="primary-button" type="submit">Register</button>
       </form>
@@ -41,13 +56,13 @@
           <p class="paragraph">You'll love Western</p>
         </div>
         <ul>
-          <li><span class="span">Unlimited</span> transaction</li>
-          <li><span class="span">Unlimited</span> Withdraws</li>
-          <li><span class="span">Unlimited</span> recievers</li>
-          <li><span class="span">More</span> than 1000 location</li>
+          <li class="basic-paragraph"><span class="span">Unlimited</span> transaction</li>
+          <li class="basic-paragraph"><span class="span">Unlimited</span> Withdraws</li>
+          <li class="basic-paragraph"><span class="span">Unlimited</span> recievers</li>
+          <li class="basic-paragraph"><span class="span">More</span> than 1000 location</li>
           <hr>
-          <li>Text notification</li>
-          <li>E-mail notification</li>
+          <li class="basic-paragraph">Text notification</li>
+          <li class="basic-paragraph">E-mail notification</li>
         </ul>
       </div>
     </div>

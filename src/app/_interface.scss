@@ -35,7 +35,15 @@
     font-size: $h1FontSize;
 }
 
+.h5 {
+    font-family: $primaryFont;
+}
+
 /* PARAGRAPH */
+
+.basic-paragraph {
+  font-family: $secundaryFont;
+}
 
 .paragraph {
     font-family: $secundaryFont;
@@ -54,4 +62,10 @@
 
 .footer {
     height: 500px;
+}
+
+/* INPUT */
+
+.input-form {
+  margin: 10px;
 }
