@@ -9,6 +9,7 @@ import { TrackTransferPageComponent } from 'src/app/track-transfer-page/track-tr
 import { PayBillsComponent } from './pay-bills/pay-bills.component';
 import { FindLocationComponent } from './find-location/find-location.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: HomePageBodyComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'track-transfer', component: TrackTransferPageComponent },
   { path: 'pay-bills', component: PayBillsComponent },
   { path: 'find-locations', component: FindLocationComponent },
-  { path: 'signin', component: SignInPageComponent }
+  { path: 'signin', component: SignInPageComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
