@@ -22,6 +22,7 @@ import { WesternService } from 'src/app/western.service';
 import { PayBillsComponent } from './pay-bills/pay-bills.component';
 import { FindLocationComponent } from './find-location/find-location.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
     SendMoneySummaryComponent,
     PayBillsComponent,
     FindLocationComponent,
-    SignInPageComponent
+    SignInPageComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
