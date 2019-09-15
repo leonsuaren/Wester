@@ -6,7 +6,7 @@ const User = require('./models/users');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/Western')
+mongoose.connect('mongodb://localhost:27017/Western', { useNewUrlParser: true })
 .then(() => {
   console.log('Connected to database on port 27017');
 })
