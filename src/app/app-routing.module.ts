@@ -10,6 +10,12 @@ import { PayBillsComponent } from './pay-bills/pay-bills.component';
 import { FindLocationComponent } from './find-location/find-location.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { MyAccountComponent } from './my-account/my-account.component';
+import { MyBeneficiaryComponent } from './my-beneficiary/my-beneficiary.component';
+import { MyBillsComponent } from './my-bills/my-bills.component';
+import { PaymentMethodComponent } from './payment-method/payment-method.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 const routes: Routes = [
   { path: '', component: HomePageBodyComponent },
@@ -20,7 +26,16 @@ const routes: Routes = [
   { path: 'pay-bills', component: PayBillsComponent },
   { path: 'find-locations', component: FindLocationComponent },
   { path: 'signin', component: SignInPageComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent,
+  children: [
+    { path: 'personalInformation', component: PersonalInformationComponent },
+    { path: 'myAccount', component: MyAccountComponent },
+    { path: 'myBeneficiaries', component: MyBeneficiaryComponent },
+    { path: 'myBills', component: MyBillsComponent },
+    { path: 'paymentMethod', component: PaymentMethodComponent },
+    { path: 'notifications', component: NotificationsComponent }
+  ]
+}
 ];
 
 @NgModule({

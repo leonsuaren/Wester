@@ -28,6 +28,23 @@
     }
 }
 
+.alternative-button {
+  background-color: #E24264;
+}
+
+.input-button {
+  background-color: $secundaryButtonBGColor;
+  font-family: $primaryFont;
+}
+
+/* LARGE BUTTON */
+
+.large-button {
+  width: 100%;
+  background-color: $largeButtonColor;
+  margin: 3px;
+}
+
 /* H1 STYLE */
 
 .h1 {
@@ -72,5 +89,10 @@
 
 /* ANCHOR */
 
+/* BASIC DIV ON PROFILE PAGE */
 
+.basics-div {
+  width: 90%;
+  margin: auto;
+}
 

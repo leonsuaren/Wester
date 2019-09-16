@@ -1,23 +1,26 @@
 <div class="main-div">
   <div class="side-left">
-    <div class="user-avatar"><p class="paragraph paragraph-avatar">LS</p></div>
+    <div class="user-avatar">
+      <p class="paragraph paragraph-avatar">LS</p>
+    </div>
+    <div>
+      <hr>
+      <p class="basic-paragraph">Leon Suarez</p>
+      <hr>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/personalInformation">Personal Information</button>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/myAccount">My Account</button>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/myBeneficiaries">My Beneficiaries</button>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/myBills">My Bills</button>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/paymentMethod">Payment Method</button>
+      <button mat-raised-button class="primary-button large-button" routerLink="/profile/notifications">Notifications</button>
+    </div>
   </div>
   <div class="side-rigth">
     <h1 class="h1">
       My Profile
     </h1>
-    <p class="paragraph">Add information about yourself</p>
-    <hr>
-    <div>
-      <h5 class="h5">Basics:</h5>
-      <div class="basics-div">
-        <p class="basic-paragraph">Name:</p>
-        <p class="basic-paragraph">Last Name:</p>
-        <p class="basic-paragraph">Country:</p>
-        <p class="basic-paragraph">State:</p>
-        <p class="basic-paragraph">E-mail:</p>
-      </div>
-      <hr>
+    <div class="div-outlet">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
