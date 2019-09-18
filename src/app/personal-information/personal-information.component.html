@@ -2,36 +2,35 @@
 <hr>
 <div>
   <h5 class="h5">Basics:</h5>
-  <div class="basics-div">
-    <form #singInForm="ngForm" >
-      <p>{{ name }}</p>
+  <div class="basics-div" *ngFor="let users of user">
+    <form #singInForm="ngForm">
       <div class="personal-info-form form-div">
         <div class="input-group">
-          <input class="input-group-field" type="text">
+          <input class="input-group-field" type="text" placeholder="{{ users.name }}" disabled>
           <div class="input-group-button">
             <input type="submit" class="button input-button" value="EDIT">
           </div>
         </div>
         <div class="input-group">
-          <input class="input-group-field" type="text">
+          <input class="input-group-field" type="text" placeholder="{{ users.lastName }}" disabled>
           <div class="input-group-button">
             <input type="submit" class="button input-button" value="EDIT">
           </div>
         </div>
         <div class="input-group">
-          <input class="input-group-field" type="text">
+          <input class="input-group-field" type="number" placeholder="{{ users.phoneNumber }}" disabled>
           <div class="input-group-button">
             <input type="submit" class="button input-button" value="EDIT">
           </div>
         </div>
         <div class="input-group">
-          <input class="input-group-field" type="text">
+          <input class="input-group-field" type="text" placeholder="{{ users.country }}" disabled>
           <div class="input-group-button">
             <input type="submit" class="button input-button" value="EDIT">
           </div>
         </div>
         <div class="input-group">
-          <input class="input-group-field" type="text">
+          <input class="input-group-field" type="text" placeholder="{{ users.state }}" disabled>
           <div class="input-group-button">
             <input type="submit" class="button input-button" value="EDIT">
           </div>

@@ -8,13 +8,13 @@ import { UserInfo } from './wester.model';
 })
 export class ProfileService {
 
-  private oneUser: any;
+  private oneUser: UserInfo[] = [];
   private userUpdated = new Subject<UserInfo[]>();
 
   constructor(private http: HttpClient) { }
 
   getUserAvatar() {
-    this.http.get<{ message: string, users: UserInfo[] }>('http://localhost:3000/api/users')
+    this.http.get<{ message: string, users: any }>('http://localhost:3000/api/users')
     .subscribe((userData) => {
       this.oneUser = userData.users;
       this.userUpdated.next([...this.oneUser]);
