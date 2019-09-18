@@ -9,12 +9,13 @@ export class SingInService {
 
   constructor(public http: HttpClient) { }
 
-  postUsers(name: string, lastName: string, phoneNumber: number,
+  // tslint:disable-next-line:variable-name
+  postUsers(_id: string, name: string, lastName: string, phoneNumber: number,
     // tslint:disable-next-line:align
     country: string, state: string, email: string, username: string, password: string) {
     const user: UserInfo = {
       // tslint:disable-next-line:object-literal-shorthand
-      name: name, lastName: lastName, phoneNumber: phoneNumber, country: country,
+     _id: _id, name: name, lastName: lastName, phoneNumber: phoneNumber, country: country,
       // tslint:disable-next-line:object-literal-shorthand
       state: state, email: email, username: username, password: password
     };

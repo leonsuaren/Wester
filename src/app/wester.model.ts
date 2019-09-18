@@ -4,6 +4,7 @@ export interface SenderInf {
 }
 
 export interface UserInfo {
+  _id: string;
   name: string;
   lastName: string;
   phoneNumber: number;
