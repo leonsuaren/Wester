@@ -64,7 +64,9 @@ import { MyBillsComponent } from './my-bills/my-bills.component';
     HttpClientModule,
     MatFormFieldModule
   ],
-  providers: [WesternService],
+  providers: [
+    WesternService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
