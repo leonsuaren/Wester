@@ -18,6 +18,7 @@ export class ProfileService {
     .subscribe((userData) => {
       this.oneUser = userData.users;
       this.userUpdated.next([...this.oneUser]);
+      // console.log(userData.users);
     });
   }
 
