@@ -23,7 +23,6 @@ export class PersonalInformationComponent implements OnInit {
     this.profileService.getUserAvatarUpdated()
     .subscribe((user: UserInfo[]) => {
       this.user = user;
-      console.log(user);
     });
   }
 

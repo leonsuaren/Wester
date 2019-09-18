@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyBeneficiaryComponent implements OnInit {
 
+
+  public beneficiary = [
+    { name: 'Nena Suarez', country: 'USA'},
+    { name: 'Esperanza Nieto', country: 'Mexico' }
+  ];
+
   constructor() { }
 
   ngOnInit() {

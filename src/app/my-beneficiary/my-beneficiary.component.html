@@ -2,8 +2,26 @@
 <hr>
 <div>
   <h5 class="h5">List of Beneficiaries:</h5>
+  <hr>
+  <br>
   <div class="basics-div">
-
+  <div *ngIf="beneficiary.length > 0">
+    <a>
+      <div class="card" *ngFor="let beneficiaries of beneficiary">
+        <div class="card-section">
+          <p class="paragraph"><span class="span">{{ beneficiaries.name }}, </span>{{ beneficiaries.country }}</p>
+        </div>
+      </div>
+    </a>
   </div>
+  <div *ngIf="beneficiary.length <= 0">
+    <div class="card">
+      <div class="card-section">
+        <p class="paragraph">You have not beneficiaries yet!!</p>
+      </div>
+    </div>
+  </div>
+  <button class="secundary-button">ADD</button>
+</div>
   <hr>
 </div>

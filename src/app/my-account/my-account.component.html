@@ -2,6 +2,27 @@
 <hr>
 <div>
   <h5 class="h5">Account Overview:</h5>
-
+  <hr>
+  <div class="basics-div" *ngFor="let users of user">
+    <br>
+    <form>
+      <div class="form-div">
+        <p class="basic-paragraph">E-mail</p>
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="{{ users.email }}" disabled>
+          <div class="input-group-button">
+            <input type="submit" class="button input-button" value="EDIT">
+          </div>
+        </div>
+        <p class="basic-paragraph">Password</p>
+        <div class="input-group">
+          <input class="input-group-field" type="password" placeholder="" disabled>
+          <div class="input-group-button">
+            <input type="submit" class="button input-button" value="EDIT">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
   <hr>
 </div>

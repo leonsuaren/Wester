@@ -15,7 +15,7 @@
 
 /* SECUNDARY BUTTON STYLE*/
 
-.secundary-button{
+.secundary-button {
     background-color: $secundaryButtonBGColor;
     font-family: $primaryFont;
     padding: $buttonPadding;
@@ -67,6 +67,10 @@
     font-size: 1.5rem;
 }
 
+.span {
+  font-weight: 700;
+}
+
 /* MAIN CONTAINER */
 
 .main-container {
@@ -94,5 +98,10 @@
 .basics-div {
   width: 90%;
   margin: auto;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
 }
 
