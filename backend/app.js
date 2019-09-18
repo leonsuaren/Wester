@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const app = express();
 
-const users = require('./router/user.router');
+const User = require('./models/users');
+
+const app = express();
 
 mongoose.connect('mongodb://localhost:27017/Western', { useNewUrlParser: true })
 .then(() => {
@@ -23,6 +24,34 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/api/users', users);
+app.post('/api/users', (req, res, next) => {
+  const user = new User({
+    name: req.body.name,
+    lastName: req.body.lastName,
+    phoneNumber: req.body.phoneNumber,
+    country: req.body.country,
+    state: req.body.state,
+    email: req.body.email,
+    username: req.body.username,
+    password: req.body.password
+  });
+  user.save();
+  res.status(201).json({
+    message: 'User Created Successfully'
+  });
+});
+
+app.get('/api/sender', (req, res, next) => {
+  const sender = [
+    { reciever: "hola",
+      sendAmont: "1"
+   }
+  ];
+  res.status(200).json({
+    message: "Correct",
+    sender: sender
+  });
+});
+
 
 module.exports = app;
