@@ -1,0 +1,16 @@
+@import './../../styles.scss';
+
+.basics-div {
+  display: flex;
+  flex-direction: row;
+  .card {
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+  }
+}
+
+.lengthCero {
+  margin: 20px;
+}
+

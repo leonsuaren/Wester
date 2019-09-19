@@ -1,9 +1,29 @@
 <p class="paragraph">My Bills</p>
 <hr>
 <div>
-  <h5 class="h5">List of Bills:</h5>
+  <h5 class="h5">Pay your bills:</h5>
+  <hr>
+  <br>
   <div class="basics-div">
-
+    <div *ngIf="bill.length > 0">
+      <a>
+        <mat-card class="card" *ngFor="let bills of bill">
+          <mat-card-header>
+            <h4 class="h4">{{ bills.billName }}</h4>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="basic-paragraph"><span class="span">{{ bills.company }}</span></p>
+            <p class="basic-paragraph">{{ bills.address }}</p>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+    <mat-card *ngIf="bill.length <= 0" class="lengthCero">
+      <div class="card-section">
+        <p class="paragraph">You have not Bills yet!!</p>
+      </div>
+    </mat-card>
+    <button class="secundary-button">ADD</button>
   </div>
   <hr>
 </div>

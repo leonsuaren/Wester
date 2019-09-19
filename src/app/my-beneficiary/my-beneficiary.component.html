@@ -5,23 +5,21 @@
   <hr>
   <br>
   <div class="basics-div">
-  <div *ngIf="beneficiary.length > 0">
-    <a>
-      <div class="card" *ngFor="let beneficiaries of beneficiary">
-        <div class="card-section">
-          <p class="paragraph"><span class="span">{{ beneficiaries.name }}, </span>{{ beneficiaries.country }}</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="beneficiary.length <= 0">
-    <div class="card">
-      <div class="card-section">
-        <p class="paragraph">You have not beneficiaries yet!!</p>
-      </div>
+    <div *ngIf="beneficiary.length > 0">
+        <mat-card class="card" *ngFor="let beneficiaries of beneficiary">
+          <div class="card-section">
+            <p class="paragraph"><span class="span">{{ beneficiaries.name }}, </span>{{ beneficiaries.country }}</p>
+          </div>
+          <button class="secundary-button">EDIT</button>
+          <button class="alternative-button primary-button">DELETE</button>
+        </mat-card>
     </div>
+    <mat-card *ngIf="beneficiary.length <= 0" class="lengthCero">
+        <div class="card-section">
+          <p class="paragraph">You have not beneficiaries yet!!</p>
+        </div>
+    </mat-card>
+    <button class="secundary-button">ADD</button>
   </div>
-  <button class="secundary-button">ADD</button>
-</div>
   <hr>
 </div>

@@ -1,9 +1,23 @@
-<p class="paragraph">Add information about yourself</p>
+<p class="paragraph">Payment Method</p>
 <hr>
 <div>
-  <h5 class="h5">Payment Method:</h5>
-  <div class="basics-div">
-
-  </div>
+  <h5 class="h5">Choose your payment method:</h5>
   <hr>
+  <br>
+  <div class="basics-div">
+    <div *ngFor='let payments of payment'>
+      <a>
+        <mat-card class="card">
+          <mat-card-header>
+            <h4 class="h4">{{ payments.type }}</h4>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="basic-paragraph"><span class="span">{{ payments.bank }}</span></p>
+            <p class="basic-paragraph">{{ payments.cardNumber }}</p>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  </div>
 </div>
+<hr>
