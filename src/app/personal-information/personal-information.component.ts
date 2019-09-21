@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
 import { UserInfo } from '../wester.model';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 @Component({
   selector: 'app-personal-information',
@@ -15,8 +16,9 @@ export class PersonalInformationComponent implements OnInit {
   public number: any;
   public country: any;
   public state: any;
+  private userId: string;
 
-  constructor(public profileService: ProfileService) { }
+  constructor(public profileService: ProfileService, public route: ActivatedRoute, public router: Router) { }
 
   ngOnInit() {
     this.profileService.getUserAvatar();

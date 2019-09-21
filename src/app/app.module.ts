@@ -29,6 +29,7 @@ import { MyBeneficiaryComponent } from './my-beneficiary/my-beneficiary.componen
 import { PaymentMethodComponent } from './payment-method/payment-method.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MyBillsComponent } from './my-bills/my-bills.component';
+import { EditPersonalInformationComponent } from './edit-personal-information/edit-personal-information.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { MyBillsComponent } from './my-bills/my-bills.component';
     MyBeneficiaryComponent,
     PaymentMethodComponent,
     NotificationsComponent,
-    MyBillsComponent
+    MyBillsComponent,
+    EditPersonalInformationComponent
   ],
   imports: [
     BrowserModule,

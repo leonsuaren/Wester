@@ -5,49 +5,14 @@
   <hr>
   <div class="basics-div" *ngFor="let users of user">
     <br>
-    <form #singInForm="ngForm">
       <div class="form-div">
-          <p class="basic-paragraph">Name</p>
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.name }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
-        <p class="basic-paragraph">Last Name</p>
-
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.lastName }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
-        <p class="basic-paragraph">Phone Numbre</p>
-
-        <div class="input-group">
-          <input class="input-group-field" type="number" placeholder="{{ users.phoneNumber }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
-        <p class="basic-paragraph">Country</p>
-
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.country }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
-        <p class="basic-paragraph">State</p>
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.state }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
+          <p class="basic-paragraph span">First Name:</p><p class="paragraph">{{ users.name }}</p>
+          <p class="basic-paragraph span">Last Name:</p><p class="paragraph">{{ users.lastName }}</p>
+          <p class="basic-paragraph span">Phone Number:</p><p class="paragraph">{{ users.phoneNumber }}</p>
+          <p class="basic-paragraph span">Country:</p><p class="paragraph">{{ users.country }}</p>
+          <p class="basic-paragraph span">State:</p><p class="paragraph">{{ users.state }}</p>
       </div>
-      <button class="alternative-button primary-button" type="submit">SAVE</button>
-    </form>
+      <button class="secundary-button" routerLink="/profile/edit">EDIT</button>
   </div>
   <hr>
 </div>
