@@ -12,7 +12,7 @@
           <p class="basic-paragraph span">Country:</p><p class="paragraph">{{ users.country }}</p>
           <p class="basic-paragraph span">State:</p><p class="paragraph">{{ users.state }}</p>
       </div>
-      <button class="secundary-button" routerLink="/profile/edit">EDIT</button>
+      <button class="secundary-button" [routerLink]="['/profile/edit', users._id]">EDIT</button>
   </div>
   <hr>
 </div>

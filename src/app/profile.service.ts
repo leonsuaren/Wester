@@ -34,8 +34,8 @@ export class ProfileService {
       // tslint:disable-next-line:object-literal-shorthand
       country: country, state: state, email: email, username: username, password: password
     };
-    this.http.put('http://localhost:3000/api/users/' + _id, user)
-    .subscribe(response => console.log(response));
+    this.http.put<{ message: string, user: UserInfo[] }>('http://localhost:3000/api/users/' + _id, user)
+    .subscribe(response => console.log(response.message));
   }
 
 

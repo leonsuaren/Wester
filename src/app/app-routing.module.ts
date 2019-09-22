@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent,
   children: [
     { path: 'personalInformation', component: PersonalInformationComponent },
-    { path: 'edit', component: EditPersonalInformationComponent },
+    { path: 'edit/:id', component: EditPersonalInformationComponent },
     { path: 'myAccount', component: MyAccountComponent },
     { path: 'myBeneficiaries', component: MyBeneficiaryComponent },
     { path: 'myBills', component: MyBillsComponent },
