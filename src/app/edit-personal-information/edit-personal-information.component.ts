@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserInfo } from '../wester.model';
 import { ProfileService } from '../profile.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-personal-information',
@@ -9,7 +10,7 @@ import { ProfileService } from '../profile.service';
 })
 export class EditPersonalInformationComponent implements OnInit {
 
-  public user: UserInfo[] = []
+  public user: UserInfo[] = [];
 
   constructor(public profileService: ProfileService) { }
 
@@ -22,8 +23,15 @@ export class EditPersonalInformationComponent implements OnInit {
 
   }
 
-  onSave() {
-
+  onSave(form: NgForm) {
+    if (form.invalid) {
+      return;
+    } else {
+      this.profileService.updateUser(form.value._id, form.value.name, form.value.lastName,
+        form.value.phoneNumber, form.value.country, form.value.state, form.value.email, form.value.username, form.value.password
+        );
+      console.dir(form.value);
+    }
   }
 
 }

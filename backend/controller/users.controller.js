@@ -30,11 +30,32 @@ exports.getUsers = (req, res, next) => {
 };
 
 exports.getUser = (req, res, next) => {
-  User.findById(req.params.id)
+  User.find(req.body.id)
   .then(user => {
     res.status(200).json({
       message: 'User fetch successfully!',
       user: user
     })
+  });
+}
+
+exports.updateUser = (req, res, next) => {
+  const user = new User({
+    _id: req.body._id,
+    name: req.body.name,
+    lastName: req.body.lastName,
+    phoneNumber: req.body.phoneNumber,
+    country: req.body.country,
+    state: req.body.state,
+    email: req.body.email,
+    username: req.body.username,
+    password: req.body.password
+  });
+  User.updateOne({_id: req.params._id}, user)
+  .then(result => {
+    console.log(result);
+    res.status(200).json({
+      message: 'User updated successfully!'
+    });
   });
 }

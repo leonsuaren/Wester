@@ -5,30 +5,50 @@
   <hr>
   <div class="basics-div" *ngFor="let users of user">
     <br>
-    <form>
+    <form #editProfile="ngForm" (submit)="onSave(editProfile)">
       <div class="form-div">
         <p class="basic-paragraph">Name:</p>
         <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.name }}">
+          <input class="input-group-field" type="text" placeholder="Name"
+          [ngModel]= "users.name"
+          name="name"
+          #name="ngModel"
+          >
         </div>
         <p class="basic-paragraph">Last Name:</p>
         <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.lastName }}">
+          <input class="input-group-field" type="text" placeholder="Last Name"
+          [ngModel]="users.lastName"
+          name="lastName"
+          #lastName="ngModel"
+          >
         </div>
         <p class="basic-paragraph">Phone Number:</p>
         <div class="input-group">
-          <input class="input-group-field" type="number" placeholder="{{ users.phoneNumber }}">
+          <input class="input-group-field" type="tel" placeholder="Phone Number"
+          [ngModel]="users.phoneNumber"
+          name="phoneNumber"
+          #phoneNumber="ngModel"
+          >
         </div>
         <p class="basic-paragraph">Country:</p>
         <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.country }}">
+          <input class="input-group-field" type="text" placeholder="Country"
+          [ngModel]="users.country"
+          name="country"
+          #country="ngModel"
+          >
         </div>
         <p class="basic-paragraph">State:</p>
         <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.state }}">
+          <input class="input-group-field" type="text" placeholder="State"
+          [ngModel]="users.state"
+          name="state"
+          #state="ngModel"
+          >
         </div>
       </div>
-      <button class="primary-button" (click)="onSave()">SAVE</button>
+      <button class="primary-button" type="submit">SAVE</button>
     </form>
   </div>
   <hr>

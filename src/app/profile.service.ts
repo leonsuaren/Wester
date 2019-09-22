@@ -18,12 +18,24 @@ export class ProfileService {
     .subscribe((userData) => {
       this.oneUser = userData.users;
       this.userUpdated.next([...this.oneUser]);
-      // console.log(userData.users);
     });
   }
 
   getUserAvatarUpdated() {
     return this.userUpdated.asObservable();
+  }
+
+  // tslint:disable-next-line:variable-name
+  updateUser(_id: string, name: string, lastName: string, phoneNumber: number, country: string,
+    // tslint:disable-next-line:align
+    state: string, email: string, username: string, password: string) {
+    // tslint:disable-next-line:object-literal-shorthand
+    const user: UserInfo =  {_id: _id, name: name, lastName: lastName, phoneNumber: phoneNumber,
+      // tslint:disable-next-line:object-literal-shorthand
+      country: country, state: state, email: email, username: username, password: password
+    };
+    this.http.put('http://localhost:3000/api/users/' + _id, user)
+    .subscribe(response => console.log(response));
   }
 
 

@@ -8,6 +8,7 @@ router.route('/')
   .get(UsersController.getUsers);
 
 router.route('/:id')
-  .get(UsersController.getUser);
+  .get(UsersController.getUser)
+  .put(UsersController.updateUser);
 
 module.exports = router;

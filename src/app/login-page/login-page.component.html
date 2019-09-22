@@ -1,21 +1,29 @@
-<div class="callout MC PC">
+<div class="callout div-log-in">
   <div class="flex-container align-justify">
-    <h5>Log in</h5>
-    <a href="">Sign Up</a>
+    <h5 class="h5">Log in</h5>
+    <a class="basic-paragraph" routerLink="/signin">Sign In</a>
   </div>
-  <form>
-    <label>E-mail or Username
-      <input type="email">
+  <hr>
+  <form #loginForm="ngForm" (submit)="onLogIn(loginForm)">
+    <label class="span basic-paragraph">Username
+      <input
+      type="text"
+      ngModel
+      name="username"
+      #username="ngModel"
+      required
+      >
     </label>
-    <div class="radio">
-      <input type="radio" id="rememberMe"><label for="rememberMe">Remember Me</label>
-    </div>
-    <label>Password
-      <input type="password" aria-describedby="passwordHelpText">
+    <label class="span basic-paragraph">Password
+      <input
+      type="password"
+      ngModel
+      name="password"
+      #password="ngModel"
+      required
+      >
     </label>
-    <div class="forgot">
-        <a href="">Forgot Password?</a>
-    </div>
-    <button class="primary-button">Continue</button>
+    <hr>
+    <button class="primary-button" type="submit">Continue</button>
   </form>
 </div>
