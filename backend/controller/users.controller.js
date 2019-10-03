@@ -49,14 +49,17 @@ exports.updateUser = (req, res, next) => {
     state: req.body.state,
     email: req.body.email,
     username: req.body.username,
-    password: req.body.password
+    password: req.body.password,
+    street: req.body.street,
+    city: req.body.city,
+    zipeCode: req.body.zipeCode
   });
   User.updateOne({_id: req.body._id}, user)
   .then(result => {
-    console.log('hola');
     res.status(200).json({
       message: 'User updated successfully!',
       user
     });
+    console.log(user);
   });
 }

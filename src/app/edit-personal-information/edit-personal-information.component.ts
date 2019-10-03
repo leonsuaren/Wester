@@ -34,9 +34,17 @@ export class EditPersonalInformationComponent implements OnInit {
       return;
     } else {
       this.profileService.updateUser(this.userId, form.value.name, form.value.lastName,
-        form.value.phoneNumber, form.value.country, form.value.state, form.value.email, form.value.username, form.value.password
-        );
+        form.value.phoneNumber, form.value.country, form.value.state, form.value.email, form.value.username, form.value.password,
+        form.value.street, form.value.city, form.value.zipeCode);
       }
   }
+
+  // addInformation(form: NgForm) {
+  //   if (form.invalid) {
+  //     return;
+  //   } else {
+  //     this.profileService.updateUser(this.userId, form.value.street, form.value.city, form.value.zipeCode);
+  //   }
+  // }
 
 }
