@@ -30,6 +30,7 @@ import { PaymentMethodComponent } from './payment-method/payment-method.componen
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MyBillsComponent } from './my-bills/my-bills.component';
 import { EditPersonalInformationComponent } from './edit-personal-information/edit-personal-information.component';
+import { EditMyAccountComponent } from './edit-my-account/edit-my-account.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EditPersonalInformationComponent } from './edit-personal-information/ed
     PaymentMethodComponent,
     NotificationsComponent,
     MyBillsComponent,
-    EditPersonalInformationComponent
+    EditPersonalInformationComponent,
+    EditMyAccountComponent
   ],
   imports: [
     BrowserModule,

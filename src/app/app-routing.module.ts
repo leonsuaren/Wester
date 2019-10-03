@@ -17,6 +17,7 @@ import { MyBillsComponent } from './my-bills/my-bills.component';
 import { PaymentMethodComponent } from './payment-method/payment-method.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { EditPersonalInformationComponent } from './edit-personal-information/edit-personal-information.component';
+import { EditMyAccountComponent } from './edit-my-account/edit-my-account.component';
 
 const routes: Routes = [
   { path: '', component: HomePageBodyComponent },
@@ -30,8 +31,9 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent,
   children: [
     { path: 'personalInformation', component: PersonalInformationComponent },
-    { path: 'edit/:id', component: EditPersonalInformationComponent },
+    { path: 'editPersonalInformation/:id', component: EditPersonalInformationComponent },
     { path: 'myAccount', component: MyAccountComponent },
+    { path: 'editMyAccount/:id', component: EditMyAccountComponent },
     { path: 'myBeneficiaries', component: MyBeneficiaryComponent },
     { path: 'myBills', component: MyBillsComponent },
     { path: 'paymentMethod', component: PaymentMethodComponent },

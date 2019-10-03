@@ -5,24 +5,14 @@
   <hr>
   <br>
   <div class="basics-div" *ngFor="let users of user">
-    <form>
+    <br>
       <div class="form-div">
-        <p class="basic-paragraph">E-mail</p>
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="{{ users.email }}" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
-        <p class="basic-paragraph">Password</p>
-        <div class="input-group">
-          <input class="input-group-field" type="password" placeholder="" disabled>
-          <div class="input-group-button">
-            <input type="submit" class="button input-button" value="EDIT">
-          </div>
-        </div>
+        <p class="basic-paragraph">Username:</p><p class="paragraph">{{ users.username }}</p>
+        <p class="basic-paragraph">E-mail:</p><p class="paragraph">{{ users.email }}</p>
+        <p class="basic-paragraph">Password:</p><p class="paragraph">--------</p>
       </div>
-    </form>
+      <button class="secundary-button" [routerLink]="['/profile/editMyAccount', users._id]">EDIT</button>
+      <button class="alternative-button primary-button">DELETE</button>
   </div>
   <hr>
 </div>

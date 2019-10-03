@@ -27,7 +27,10 @@ export class SignInPageComponent implements OnInit {
       form.value.state,
       form.value.email,
       form.value.username,
-      form.value.password
+      form.value.password,
+      form.value.street,
+      form.value.city,
+      form.value.zipeCode
     );
     form.resetForm();
     console.log(form.value);

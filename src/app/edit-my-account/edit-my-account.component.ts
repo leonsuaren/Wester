@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { UserInfo } from '../wester.model';
 import { ProfileService } from '../profile.service';
-import { NgForm } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
-  selector: 'app-edit-personal-information',
-  templateUrl: './edit-personal-information.component.html',
-  styleUrls: ['./edit-personal-information.component.scss']
+  selector: 'app-edit-my-account',
+  templateUrl: './edit-my-account.component.html',
+  styleUrls: ['./edit-my-account.component.scss']
 })
-export class EditPersonalInformationComponent implements OnInit {
+export class EditMyAccountComponent implements OnInit {
 
-  public user: UserInfo[] = [];
+  public user: UserInfo[];
   public userId: string;
 
   constructor(public profileService: ProfileService, public router: ActivatedRoute) { }
@@ -29,14 +28,8 @@ export class EditPersonalInformationComponent implements OnInit {
     });
   }
 
-  onSave(form: NgForm) {
-    if (form.invalid) {
-      return;
-    } else {
-      this.profileService.updateUser(this.userId, form.value.name, form.value.lastName,
-        form.value.phoneNumber, form.value.country, form.value.state, form.value.email, form.value.username, form.value.password,
-        form.value.street, form.value.city, form.value.zipeCode);
-      }
+  onSave() {
+
   }
 
 }

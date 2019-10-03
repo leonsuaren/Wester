@@ -1,0 +1,30 @@
+<p class="paragraph">Edit Profile</p>
+<hr>
+<div>
+  <h5 class="h5">Basics:</h5>
+  <hr>
+  <div class="basics-div" *ngFor="let users of user">
+    <br>
+    <form #editMyAccount="ngForm" (submit)="onSave(editMyAccount)">
+      <div class="form-div">
+        <p class="basic-paragraph">Username:</p>
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="Username" [ngModel]="users.username" name="name"
+            #name="ngModel">
+        </div>
+        <p class="basic-paragraph">E-mail:</p>
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="E-mail" [ngModel]="users.email" name="lastName"
+            #lastName="ngModel">
+        </div>
+        <p class="basic-paragraph">Phone Number:</p>
+        <div class="input-group">
+          <input class="input-group-field" type="password" placeholder="Password" [ngModel]="users.password"
+            name="phoneNumber" #phoneNumber="ngModel">
+        </div>
+      </div>
+      <button class="primary-button" type="submit">SAVE</button>
+      <hr>
+    </form>
+    <hr>
+  </div>

@@ -34,21 +34,17 @@
         </div>
       </div>
       <button class="primary-button" type="submit">SAVE</button>
-    <!-- </form> -->
-  <!-- </div> -->
   <hr>
   <h5 class="h5">More About Me</h5>
   <p class="basic-paragraph">Add An Adrress:</p>
   <hr>
-  <!-- <div class="basics-div"> -->
     <br>
-    <!-- <form #addInformationForm="ngForm" (submit)="addInformation(addInformationForm)"> -->
       <div class="form-div">
         <p class="basic-paragraph">Street:</p>
         <div class="input-group">
           <input class="input-group-field"
           type="text"
-          ngModel
+          [ngModel]='users.street'
           name="street"
           #street="ngModel"
           >
@@ -57,7 +53,7 @@
         <div class="input-group">
           <input class="input-group-field"
           type="text"
-          ngModel
+          [ngModel]='users.city'
           name="city"
           #city="ngModel"
           >
@@ -66,7 +62,7 @@
         <div class="input-group">
           <input class="input-group-field"
           type="text"
-          ngModel
+          [ngModel]='users.zipeCode'
           name="zipeCode"
           #zipeCode="ngModel"
           >
@@ -74,6 +70,5 @@
       </div>
       <button class="primary-button" type="submit">SAVE</button>
     </form>
-  <!-- </div> -->
   <hr>
 </div>
