@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { UserInfo } from './wester.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SingInService {
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient, public router: Router) { }
 
   // tslint:disable-next-line:variable-name
   postUsers(_id: string, name: string, lastName: string, phoneNumber: number,
@@ -19,14 +20,19 @@ export class SingInService {
       // tslint:disable-next-line:object-literal-shorthand
       state: state, email: email, username: username, password: password, street: street, city: city, zipeCode: zipeCode
     };
-    this.http.post<{ message: string }>('http://localhost:3000/api/users', user)
+    this.http.post<{ message: string }>('http://localhost:3000/api/users/signup', user)
     .subscribe((userData) => {
-      console.log(userData);
+      this.router.navigateByUrl('/');
     });
   }
 
-  logInUser() {
-
+  logInUser(email: string, password: string) {
+    // tslint:disable-next-line:object-literal-shorthand
+    const userLogin = { email: email, password: password };
+    this.http.post<{ token: string }>('http://localhost:3000/api/users/login', userLogin)
+    .subscribe(userLoginInfo => {
+      console.log(userLoginInfo);
+    });
   }
 
 }

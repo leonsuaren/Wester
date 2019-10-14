@@ -33,7 +33,6 @@ export class SignInPageComponent implements OnInit {
       form.value.zipeCode
     );
     form.resetForm();
-    console.log(form.value);
   }
 
 }

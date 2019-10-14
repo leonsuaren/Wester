@@ -3,9 +3,12 @@ const router = express.Router();
 const UsersController = require('./../controller/users.controller');
 
 
-router.route('/')
-  .post(UsersController.postUser)
+router.route('/signup')
+  .post(UsersController.signupUser)
   .get(UsersController.getUsers);
+
+router.route('/login')
+  .post(UsersController.loginUser)
 
 router.route('/:id')
   .get(UsersController.getUser)

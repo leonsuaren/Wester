@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { SingInService } from '../sing-in.service';
 
 @Component({
   selector: 'app-login-page',
@@ -7,15 +8,17 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-
-  onLogIn(form: NgForm) {
-    console.log(form.value);
-    form.resetForm();
-  }
-
-  constructor() { }
+  constructor(private singInService: SingInService) { }
 
   ngOnInit() {
   }
+
+  onLogIn(form: NgForm) {
+
+    this.singInService.logInUser(form.value.email, form.value.password);
+
+  }
+
+
 
 }
