@@ -1,17 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+require('./db');
 const users = require('./router/user.router');
+const beneficiary = require('./router/beneficiary.router');
 
 const app = express();
-
-mongoose.connect('mongodb://localhost:27017/Western', { useNewUrlParser: true })
-.then(() => {
-  console.log('Connected to database on port 27017');
-})
-.catch(() => {
-  console.log('Connection failed!!');
-});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,6 +17,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/users', users);
+app.use('/api/beneficiary', beneficiary);
 
 
 module.exports = app;

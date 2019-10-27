@@ -31,6 +31,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { MyBillsComponent } from './my-bills/my-bills.component';
 import { EditPersonalInformationComponent } from './edit-personal-information/edit-personal-information.component';
 import { EditMyAccountComponent } from './edit-my-account/edit-my-account.component';
+import { AddBeneficiaryComponent } from './add-beneficiary/add-beneficiary.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EditMyAccountComponent } from './edit-my-account/edit-my-account.compon
     NotificationsComponent,
     MyBillsComponent,
     EditPersonalInformationComponent,
-    EditMyAccountComponent
+    EditMyAccountComponent,
+    AddBeneficiaryComponent
   ],
   imports: [
     BrowserModule,

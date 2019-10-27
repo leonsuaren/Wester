@@ -5,24 +5,14 @@
   </div>
   <hr>
   <form #loginForm="ngForm" (submit)="onLogIn(loginForm)">
-    <label class="span basic-paragraph">E-Mail
-      <input
-      type="text"
-      ngModel
-      name="email"
-      #email="ngModel"
-      required
-      >
-    </label>
-    <label class="span basic-paragraph">Password
-      <input
-      type="password"
-      ngModel
-      name="password"
-      #password="ngModel"
-      required
-      >
-    </label>
+    <mat-form-field>
+        <input matInput type="text" ngModel name="email" #email="ngModel" required email>
+      <mat-error *ngIf='email.invalid'>Pleace enter a valid E-mail</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="password" ngModel name="password" #password="ngModel" required>
+      <mat-error *ngIf='password.invalid'>Pleace enter a valid E-mail</mat-error>
+    </mat-form-field>
     <hr>
     <button class="primary-button" type="submit">Continue</button>
   </form>

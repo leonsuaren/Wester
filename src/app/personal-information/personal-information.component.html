@@ -11,6 +11,9 @@
           <p class="basic-paragraph">Phone Number:</p><p class="paragraph">{{ users.phoneNumber }}</p>
           <p class="basic-paragraph">Country:</p><p class="paragraph">{{ users.country }}</p>
           <p class="basic-paragraph">State:</p><p class="paragraph">{{ users.state }}</p>
+          <p class="basic-paragraph" *ngIf='users.street'>Street:</p><p class="paragraph" *ngIf='users.street'>{{ users.street }}</p>
+          <p class="basic-paragraph" *ngIf='users.city'>City:</p><p class="paragraph" *ngIf='users.city'>{{ users.city }}</p>
+          <p class="basic-paragraph" *ngIf='users.zipeCode'>Zipe Code:</p><p class="paragraph" *ngIf='users.zipeCode'>{{ users.zipeCode }}</p>
       </div>
       <button class="secundary-button" [routerLink]="['/profile/editPersonalInformation', users._id]">EDIT</button>
   </div>

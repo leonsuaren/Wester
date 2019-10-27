@@ -1,0 +1,48 @@
+<p class="paragraph">My Beneficiaries</p>
+<hr>
+<div>
+  <h5 class="h5">List of Beneficiaries:</h5>
+  <hr>
+  <br>
+  <div class="basics-div">
+    <form class="form-div" #beneficiaryForm="ngForm" (submit)="onAddBeneficiary(beneficiaryForm)">
+      <mat-form-field>
+        <input matInput type="text" ngModel name="name" #name="ngModel" required placeholder="Name">
+        <mat-error>Pleace enter a Name</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" ngModel name="lastName" #lastName="ngModel" required placeholder="LastName">
+        <mat-error>Please enter a Last Name</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="email" ngModel name="email" #email="ngModel" required email placeholder="E-mail">
+        <mat-error>Please enter a valid E-mail</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput  type="number" ngModel name="phoneNumner" #phoneNumber="ngModel" required placeholder="Phone Number">
+        <mat-error>Please enter a Phone Number</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" ngModel name="street" #street="ngModel" required placeholder="Street">
+        <mat-error>Please enter a Street</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" ngModel name="city" #city="ngModel" required placeholder="City">
+        <mat-error>Please enter a City</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" ngModel name="zipeCode" #zipeCode="ngModel" required placeholder="Zipe Code">
+        <mat-error>Please enter a Zipe Code</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" ngModel name="state" #state="ngModel" required placeholder="State">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" ngModel name="country" #country="ngModel" required placeholder="Country">
+        <mat-error>Please enter a Country</mat-error>
+      </mat-form-field>
+      <button class="secundary-button" type="submit">SUBMIT</button>
+    </form>
+  </div>
+  <hr>
+</div>
